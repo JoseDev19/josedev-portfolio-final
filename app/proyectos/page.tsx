@@ -1,0 +1,2 @@
+import {projects} from "@/lib/data";
+export default function P(){return <section><div className="wrap"><p className="kick">// proyectos</p><h2>Webs que he publicado</h2><div className="grid">{projects.map(p=><a className="card" key={p.n} href={p.u} target="_blank" rel="noopener noreferrer"><p className="kick">2026</p><h3>{p.n}</h3><p className="mut" style={{margin:"8px 0"}}>{p.d}</p>{p.t.map(t=><span className="tag" key={t}>{t}</span>)}<p className="mono" style={{color:"var(--a)",marginTop:14,fontSize:13}}>{p.u.replace("https://","")} ↗</p></a>)}</div></div></section>}

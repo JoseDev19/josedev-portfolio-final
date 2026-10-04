@@ -1,0 +1,2 @@
+import {skills} from "@/lib/data";
+export default function P(){return <section><div className="wrap"><p className="kick">// skills</p><h2>Lo que sé hacer</h2><div className="grid">{skills.map(s=><div className="card" key={s.n}><div style={{display:"flex",justifyContent:"space-between"}}><h3 style={{fontSize:18}}>{s.n}</h3><span className="mono" style={{color:"var(--a)"}}>{s.p}%</span></div><div className="bar2"><i style={{width:s.p+"%"}}/></div><p className="mut">{s.d}</p></div>)}</div></div></section>}

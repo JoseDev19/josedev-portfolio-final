@@ -1,0 +1,3 @@
+import Form from "./Form";import {me} from "@/lib/data";
+export default function P(){return <section><div className="wrap"><p className="kick">// contacto</p><h2>¿Hacemos algo juntos?</h2><p className="mut" style={{margin:"14px 0 28px"}}>Prácticas, proyectos de infraestructura o una web para tu negocio.</p>
+<div className="grid" style={{gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:32}}><div><p><a href={`mailto:${me.email}`}>{me.email}</a></p><p style={{marginTop:8}}><a href={me.github} target="_blank" rel="noopener noreferrer">GitHub</a> · <a href={me.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div><Form/></div></div></section>}
